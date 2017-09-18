@@ -1123,6 +1123,7 @@ button {
     width: 70%;
     margin-left: 2%;
     position: fixed;
+    margin-top: -100px;
 }
 
 #item-header h1 {
