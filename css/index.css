@@ -840,10 +840,10 @@ button {
           margin: -275px 0px 20px 32%;
     }
     .resources-list .resources-grid-type{
-        margin:-180px 0px 20px 32% !important;
+        margin:-160px 0px 20px 32% !important;
     }
     .resources-list .resources-grid-year{
-        margin:-150px 0px 20px 32% !important;
+        margin:-130px 0px 20px 32% !important;
     }
 
 }
@@ -862,7 +862,7 @@ button {
     margin: -275px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
-    width: 90%;
+    width: 70%;
     font-size: 30pt;
     font-family: Gilroy;
     font-weight: 800;
