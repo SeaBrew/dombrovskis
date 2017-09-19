@@ -916,7 +916,7 @@ button {
 
 .resources-list .resources-grid-type {
     position: absolute;
-    margin: -245px 0px 20px 32%;
+    margin: -65px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
     font-size: 20pt;
@@ -925,9 +925,10 @@ button {
     line-height: 50px;
 
 }
+
 .resources-list .resources-grid-year {
     position: absolute;
-    margin: -215px 0px 20px 32%;
+    margin: -35px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
     font-size: 20pt;
