@@ -1,4 +1,5 @@
-@font-face {
+@media screen and (max-width: 1025px) {
+    @font-face {
 	font-family: 'Gilroy';
 	src: url('../fonts/gilroy-extrabold.otf');
 	font-weight: 800;
@@ -46,11 +47,11 @@ main {
 
 /* Slideshow container */
 .slideshow-container {
-    height: 470px;
+    height: 600px;
     width: 75%;
-    margin-left: 5%;
-	margin-top: 1% !important;
-    margin-bottom: 10% !important;
+    margin-left: 12.5%;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
     position: relative;
     margin: auto;
     object-fit:cover;
@@ -66,6 +67,7 @@ main {
     background-color: #717171;
     }
 
+ /* Fading animation */
 
 #header {
     height: 100px;
@@ -144,9 +146,9 @@ main {
 .popup-description-container {
     z-index: 20;
     position: fixed;
-    height: 56%;
+    height: 440px;
     width: 70%;
-    margin:11% 0 0 15%;
+    margin:8% 0 0 15%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: #FFFFFF;
     -webkit-transform: translateX(1800px);
@@ -179,10 +181,10 @@ main {
     float: left;
     width: 70%;
     margin:0px 0 0 20px;
-    font-size: 1em !important;
+    font-size: 12pt;
+    line-height: 25px;
     font-family: Gilroy !important;
     font-weight: 300;
-    line-height: 23px;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -191,17 +193,17 @@ main {
 
 .popup-description-container #ex_high {
     float: right;
-    width: 16%;
-    margin:10% 7% 0 0px;
+    width: 20%;
+    margin:110px 45px 0 0px;
     font-size: 25pt;
+    line-height: 35px;
     font-family: Gilroy !important;
     font-weight: 800;
-    line-height: 30px;
 }
 
 .popup-description-container #ex_high img {
     float: right;
-    margin:10px 10px 0 0;
+    margin:20px 70px 0 0;
     background-color: transparent;
 	width: 80px;
 	height: 40px;
@@ -222,9 +224,7 @@ main {
 }
 .popup-description-container .popup-description-close::before, .popup-description-container .popup-description-close::after {
 }
-.popup-description-container .popup-description-close::before {
-}
-.popup-description-container .popup-description-close::after {
+.popup-description-container .popup-description-close::before, .popup-description-container .popup-description-close::after {
 }
 
 .is-visible .popup-description-container {
@@ -246,7 +246,11 @@ main {
     z-index: 100;
     background-color: #ffffff;
 }
-
+.tertiary-container .highSlides img {
+        height: 420px;
+        margin-top: 90px !important;
+    }
+    
 .popup-highlights.is-visible {
     opacity: 1;
     visibility: visible;
@@ -293,8 +297,8 @@ main {
 
 .popup-highlights-container .popup-highlights-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
     width: 30px;
     height: 30px;
 }
@@ -309,7 +313,7 @@ main {
 }
 
 #highlights-title {
-    margin:15px 0 0 15px;
+    margin:30px 0 0 30px;
     background-color: transparent;
     font-family: Gilroy;
     font-weight: 800;
@@ -334,13 +338,14 @@ main {
 .itemSlides
 {display:none}
 
-.highSlides img, .itemSlides img {
+.highSlides img, .itemSlides img
+ {
     height: 380px;
     width: 65%;
     margin-left: 17.5%;
-    margin-top: 7% !important;
+    margin-top: 12% !important;
     object-fit:cover;
-    object-position: center;
+     object-position: center;
 }
 
 /* Next & previous buttons */
@@ -366,7 +371,7 @@ main {
 
 /* Position the "next button" to the right */
 .next {
-    right: 40px;
+    right: 44px;
 }
 
 /* Caption text */
@@ -387,7 +392,7 @@ main {
     color: #000000;
     padding: 8px 12px;
     position: absolute;
-    top: 15px;
+    top: 35px;
     right: 7%;
     font-family: Gilroy;
     font-weight: 800;
@@ -410,7 +415,7 @@ main {
 	left: 0;
 	top: 0;
 	margin: 0px;
-    height:700px;
+    height:730px;
     width: 100%;
     background: transparent;
     z-index: 25;
@@ -420,11 +425,11 @@ main {
     overflow: scroll;
     /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
     -webkit-overflow-scrolling: touch;
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    -o-transform: translateY(100%);
-    transform: translateY(100%);
+    -webkit-transform: translateY(88%);
+    -moz-transform: translateY(88%);
+    -ms-transform: translateY(88%);
+    -o-transform: translateY(88%);
+    transform: translateY(88%);
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
@@ -493,14 +498,14 @@ main {
     width: 2px;
     height: 60%;
     background-color: #dedede;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 100px;
 }
 .grid-trigger {
     float: right;
     position: absolute;
     right:30px;
-    top: 30px;
+    top: 20px;
 	width: 50px;
 	height: 40px;
 }
@@ -509,7 +514,7 @@ main {
 
 .featured, .resources  {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #ffffff;
     margin:88px 0 0 0px;
     float: left;
@@ -531,13 +536,13 @@ main {
     margin-top: 12px;
     margin-left: 0px;
     float: left;
-    position: fixed;
+    position: relative;
     z-index: 9;
 }
 
 
 #featured-header h1, #resources-header h1 {
-    margin: 27px 0  0 50px;
+    margin: 20px 0  0 50px;
     width: 30%;
     float: left;
     font-size: 35pt;
@@ -550,7 +555,7 @@ main {
     float: right;
     width: 30%;
     list-style-type: none;
-    margin: 30px -10% 0 0px;
+    margin: 30px 0px 0 0px;
     padding: 0;
     overflow: hidden;
     height: 100%;
@@ -563,7 +568,7 @@ button {
 
 #featured-header li, #resources-header li {
     display: inline-block;
-    margin: 0 15px 0 0px;
+    margin: 0 0px 0 0px;
     height: 65px;
     width: 65px;
 }
@@ -579,12 +584,13 @@ button {
 }
 
 #resources-secondary {
+    position: relative;
+    margin-top: 0px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     background: #ffffff;
     margin: 95px 0 0 10px;
     float: left;
-    position: fixed;
     z-index: 9;
 
 }
@@ -644,7 +650,7 @@ button {
 #featured-list-container .featured-grid li, #resources-list-container .resources-grid li {
     width: 30%;
     margin: 1.5% 1.5% 1.5% 1.5% ;
-    height: 330px;
+    height: 375px !important;
     background-color: #dedede;
     display: inline-block;
 }
@@ -659,7 +665,7 @@ button {
 .featured-grid .featured-grid-title {
     position: absolute;
     height: 50px;
-    margin: -55px 0 0 0 !important;
+    margin: -55px 0 0 0!important;
     background-color: rgba(0,0,0,0.4);
     width: 30%;
     text-align: center;
@@ -671,6 +677,20 @@ button {
     z-index: 8;
 }
 
+.featured-grid .featured-grid-number {
+    position: absolute;
+    height: 50px;
+    margin:-50px 0 0 25!important;
+    width: 5%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12pt;
+    font-family: Gilroy;
+    font-weight: 300;
+    line-height: 50px;
+    z-index: 9;
+}
+
 .resources-grid .resources-grid-title, .resources-grid .resources-grid-type, .resources-grid .resources-grid-year {
     display: none;
 }
@@ -678,7 +698,7 @@ button {
 #featured-list-container .featured-list li, #resources-list-container .resources-list li {
     width: 30%;
     margin: 1.5% 0 0 0;
-    height: 330px;
+    height: 450px;
     background-color: #dedede;
 }
 
@@ -686,10 +706,10 @@ button {
 .featured-list .featured-grid-title, .resources-list .resources-grid-title {
     position: absolute;
     height: 40px;
-    margin: -335px 0px 20px 32%;
+    margin: margin: -275px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
-    width: 65%;
+    width: 90%;
     font-size: 30pt;
     font-family: Gilroy;
     font-weight: 800;
@@ -701,7 +721,7 @@ button {
 .featured-list .featured-grid-item-numbers {
     position: absolute;
     height: 40px;
-    margin: -300px 0px 60px 32%;
+    margin: -240px 0px 60px 32%;
     background-color: transparent;
     color: #000000;
     /*width: 28.8%;*/
@@ -713,20 +733,22 @@ button {
 
 
 
-body.safari .featured-list .featured-grid-item-numbers {
-	    margin: 40px 0px 60px 2% !important;
-}
+	body.safari .featured-list .featured-grid-item-numbers {
 
+	    margin: 40px 0px 60px 2% !important;
+
+
+
+}
 .featured-list  .featured-grid-description {
 	position: absolute;
 	height: 200px;
-	margin: -270px 0px 100px 32%;
-    width: 65%;
+	margin: -210px 0px 100px 32%;
 	color: #000000;
 	font-size: 14pt;
 	font-family: Gilroy;
 	font-weight: 100;
-	line-height: 22px;
+	line-height: 20px;
 }
 
 .featured-list .featured-grid-number, .resources-list .resources-grid-number {
@@ -741,7 +763,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 
 .resources-list .resources-grid-type {
     position: absolute;
-    margin: -300px 0px 20px 32%;
+    margin: -230px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
     font-size: 20pt;
@@ -752,7 +774,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 }
 .resources-list .resources-grid-year {
     position: absolute;
-    margin: -270px 0px 20px 32%;
+    margin:-200px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
     font-size: 20pt;
@@ -915,7 +937,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 .tertiary-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 90%;
     margin: 105px 0 0 0;
     background: #ffffff;
     z-index: 20;
@@ -957,8 +979,6 @@ body.safari .featured-list .featured-grid-item-numbers {
     line-height: 50px;
     margin-top: -10px !important;
     margin-left: 0px !important;
-    width: 65%;
-    max-height: 200px;
 }
 
 #item-header h2 {
@@ -967,8 +987,6 @@ body.safari .featured-list .featured-grid-item-numbers {
     font-weight: 800;
     line-height: 35px;
     margin-top: -35px;
-    width: 25%;
-    max-height: 100px;
 }
 
 #item-header h3 {
@@ -978,8 +996,6 @@ body.safari .featured-list .featured-grid-item-numbers {
     line-height: 35px;
     margin-top: -30px;
     margin-bottom: 20px;
-    width: 25%;
-    max-height: 100px;
 }
 
 
@@ -1019,6 +1035,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 .list-item {
     color: #000000;
     padding: 4px;
+    /*position: absolute;*/
     margin: 10px 0 0 17.5%;
     width: 65%;
     font-family: Gilroy;
@@ -1050,17 +1067,20 @@ body.safari .featured-list .featured-grid-item-numbers {
 }
 
 #list-item-links {
-    position: absolute;
+	 position: absolute;
     height: 100px;
+    /*width: 5%;*/
     margin-left: 2%;
+    /*margin-top: 400px;*/
     bottom: 10px;
 }
 
 #list-item-links h1 a{
     font-family: Gilroy;
-    font-size: 10pt;
+    font-size: 15pt;
     font-weight: 300;
     line-height: 35px;
+    margin-top: 0px;
     color: #609544;
 }
 
@@ -1070,7 +1090,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 }
 #list-item-links h2{
     font-family: Gilroy;
-    font-size: 10pt;
+    font-size: 15pt;
     font-weight: 300;
     line-height: 35px;
     margin-top: -30px;
@@ -1083,12 +1103,12 @@ body.safari .featured-list .featured-grid-item-numbers {
 
 /* FOOTER FOR BOTH FEATURED AND RESOURCES */
 #featured-footer, #resources-footer {
-    height: 200px;
+    height: 240px;
     width: 100%;
     border-top: 2px solid #dedede;
     background: #FFFFFF;
     position: relative;
-    margin-top: 40px;
+    margin-top: 0px;
 	overflow: hidden;
 }
 
@@ -1125,7 +1145,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 #featured-footer-secondary, #resources-footer-secondary {
     height: 50%;
     width: 40%;
-    margin-top: 6%;
+    margin-top: 5%;
     float: right;
 }
 
@@ -1166,3 +1186,6 @@ body.safari .featured-list .featured-grid-item-numbers {
 .w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 .w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 .w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+
+    
+}
