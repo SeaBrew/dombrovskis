@@ -217,8 +217,8 @@ main {
 
 .popup-description-container .popup-description-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 5px;
+    right: 5px;
     width: 10px;
     height: 10px;
 }
@@ -297,7 +297,7 @@ main {
 .highlights-slider-container{
     height: 75%;
     width: 90%;
-    margin: 0px 0 0 5% !important;
+    margin: 10px 0 0 5% !important;
     margin: auto;
     position: fixed;
     background-color: #f8f8f8;
