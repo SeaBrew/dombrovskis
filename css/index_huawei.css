@@ -181,8 +181,8 @@ main {
     float: left;
     width: 70%;
     margin:-15px 0 0 10px;
-    font-size: 12pt;
-    line-height: 17px;
+    font-size: 15pt;
+    line-height: 20px;
     font-family: Gilroy !important;
     font-weight: 300;
     -webkit-column-count: 1; /* Chrome, Safari, Opera */
