@@ -741,7 +741,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 
 .resources-list .resources-grid-type {
     position: absolute;
-    margin: -300px 0px 20px 32%;
+    margin: -70px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
     font-size: 20pt;
@@ -752,7 +752,7 @@ body.safari .featured-list .featured-grid-item-numbers {
 }
 .resources-list .resources-grid-year {
     position: absolute;
-    margin: -270px 0px 20px 32%;
+    margin: -35px 0px 20px 32%;
     background-color: transparent;
     color: #000000;
     font-size: 20pt;
