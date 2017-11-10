@@ -13,7 +13,9 @@
 }
 
 /* --------------------------------
+
 Primary style
+
 -------------------------------- */
 body{
     height: 100%;
@@ -47,8 +49,8 @@ main {
     height: 470px;
     width: 75%;
     margin-left: 5%;
-    margin-top: 1% !important;
-    margin-bottom: 3% !important;
+	margin-top: 1% !important;
+    margin-bottom: 10% !important;
     position: relative;
     margin: auto;
     object-fit:cover;
