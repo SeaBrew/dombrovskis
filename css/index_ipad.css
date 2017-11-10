@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px)  {
+@media only screen and (min-width : 1024px) {
     @font-face {
 	font-family: 'Gilroy';
 	src: url('../fonts/gilroy-extrabold.otf');
@@ -48,10 +48,10 @@ main {
 /* Slideshow container */
 .slideshow-container {
     height: 600px;
-    width: 75%;
-    margin-left: 12.5%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 0px !important;
     position: relative;
     margin: auto;
     object-fit:cover;
