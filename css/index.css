@@ -50,7 +50,7 @@ main {
     width: 75%;
     margin-left: 5%;
 	margin-top: 1% !important;
-    margin-bottom: 10% !important;
+    margin-bottom: 12% !important;
     position: relative;
     margin: auto;
     object-fit:cover;
@@ -183,9 +183,9 @@ main {
     font-family: Gilroy !important;
     font-weight: 300;
     line-height: 23px;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
 
 }
 
